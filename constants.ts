@@ -2,6 +2,7 @@
 
 
 
+
 // --- KONFIGURACJA ---
 // Wklej tutaj URL swojego Webhooka (np. Google Apps Script / Make.com)
 export const WEBHOOK_URL = ""; 
@@ -154,7 +155,7 @@ export const styles = {
     border: '1px solid #cbd5e1',
     fontSize: '15px',
     minHeight: '100px', // Increased height (approx 3x)
-    resize: 'none',
+    resize: 'none' as const, // FIX: Added as const for TypeScript
     fontFamily: 'inherit',
   },
   sendBtn: {

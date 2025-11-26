@@ -1,3 +1,7 @@
+
+// FIX: Declare process for TypeScript in Vite environment
+declare const process: { env: { API_KEY: string } };
+
 import React, { useState, useRef, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { GoogleGenAI } from "@google/genai";
